@@ -9,8 +9,8 @@ spec:
     type: Recreate
     template:
         metadata:
-        labels:
-            app: hello-world-service
+            labels:
+                app: hello-world-service
         spec:
             containers:
             - name: hello-world
