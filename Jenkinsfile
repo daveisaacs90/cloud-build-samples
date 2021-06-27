@@ -4,7 +4,7 @@ pipeline {
         PROJECT_ID = 'java-app-315716'
         CLUSTER_NAME = 'cluster-1'
         LOCATION = 'us-east4'
-        CREDENTIALS_ID = 'Jenkins'
+        CREDENTIALS_ID = 'java-app-315716'
     }
     stages {
         stage('Deploy to GKE') {
