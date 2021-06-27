@@ -17,4 +17,4 @@ spec:
       - name: hello-world
         image: gcr.io/java-app-315716/hello-world-service:v2.0
         ports:
-        - containerPort: 80
+        - containerPort: 8080
