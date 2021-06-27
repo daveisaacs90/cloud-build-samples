@@ -15,6 +15,6 @@ spec:
     spec:
       containers:
       - name: hello-world
-        image: gcr.io/java-app-315716/hello-world-service:v1.0
+        image: gcr.io/java-app-315716/hello-world-service:v2.0
         ports:
         - containerPort: 80
