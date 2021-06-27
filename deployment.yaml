@@ -5,7 +5,6 @@ metadata:
   labels:
     app: hello-world-service
 spec:
-  replicas: 3
   selector:
     matchLabels:
       app: hello-world-service
@@ -16,6 +15,6 @@ spec:
     spec:
       containers:
       - name: hello-world
-        image: gcr.io/java-app-315716/hello-world:8
+        image: gcr.io/java-app-315716/hello-world-service:v1.0
         ports:
         - containerPort: 80
