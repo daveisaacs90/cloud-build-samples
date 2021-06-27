@@ -1,20 +1,20 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-name: hello-world-service
-labels:
-  app: hello-world-service
+    name: hello-world-service
+    labels:
+        app: hello-world-service
 spec:
     strategy:
     type: Recreate
     template:
-    metadata:
+        metadata:
         labels:
-        app: hello-world-service
+            app: hello-world-service
     spec:
         containers:
         - name: hello-world
-        image: gcr.io/java-app-315716/hello-world:8
-        imagePullPolicy: Always
-        ports:
-        - containerPort: 80
+            image: gcr.io/java-app-315716/hello-world:8
+            imagePullPolicy: Always
+            ports:
+            - containerPort: 80
