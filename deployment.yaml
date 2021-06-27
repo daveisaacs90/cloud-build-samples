@@ -11,10 +11,10 @@ spec:
         metadata:
         labels:
             app: hello-world-service
-    spec:
-        containers:
-        - name: hello-world
-        image: gcr.io/java-app-315716/hello-world:8
-        imagePullPolicy: Always
-        ports:
-        - containerPort: 80
+        spec:
+            containers:
+            - name: hello-world
+            image: gcr.io/java-app-315716/hello-world:8
+            imagePullPolicy: Always
+            ports:
+            - containerPort: 80
