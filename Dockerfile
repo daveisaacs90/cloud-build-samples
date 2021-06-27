@@ -13,5 +13,5 @@
 # limitations under the License.
 
 FROM openjdk:8-jdk-alpine
-ADD build/libs/hellospring-1.0.0.jar
+ADD build/libs/hellospring-1.0.0.jar hellospring-1.0.0.jar
 ENTRYPOINT ["java", "-Djava.security.edg=file:/dev/./urandom","-jar","/app.jar"]
