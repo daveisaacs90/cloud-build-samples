@@ -5,16 +5,16 @@ name: hello-world-service
 labels:
   app: hello-world-service
 spec:
-strategy:
-  type: Recreate
-template:
-  metadata:
-    labels:
-      app: hello-world-service
-  spec:
-    containers:
-    - name: hello-world
-      image: hello-world/hello:latest
-      imagePullPolicy: Always
-      ports:
-      - containerPort: 80
+    strategy:
+    type: Recreate
+    template:
+    metadata:
+        labels:
+        app: hello-world-service
+    spec:
+        containers:
+        - name: hello-world
+        image: gcr.io/java-app-315716/hello-world:8
+        imagePullPolicy: Always
+        ports:
+        - containerPort: 80
