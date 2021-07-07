@@ -16,6 +16,6 @@ spec:
     spec:
       containers:
       - name: hello-world
-        image: gcr.io/java-app-315716/hello-world-test:tagversion
+        image: gcr.io/java-app-315716/hello-world-test:v2.0
         ports:
         - containerPort: 8080
